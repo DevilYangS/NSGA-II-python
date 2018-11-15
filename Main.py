@@ -37,8 +37,8 @@ def EA_Run(Generations, PopSize, M, Run, Problem, Algorithm) :
 
         Population = np.vstack((Population, Offspring))
         FunctionValue =np.vstack((FunctionValue, FunctionValue_Offspring))
-        Population = np.loadtxt('population.txt')
-        FunctionValue = np.loadtxt('FunctionValue.txt')
+        # Population = np.loadtxt('population.txt')
+        # FunctionValue = np.loadtxt('FunctionValue.txt')
         Population, FunctionValue, FrontValue, CrowdDistance, MaxFront = F_EnvironmentSelect(Population, FunctionValue, PopSize)
 
         plt.clf()
